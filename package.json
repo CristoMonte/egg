@@ -8,7 +8,8 @@
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.5.0",
     "egg-validate": "^1.0.0",
-    "egg-view-nunjucks": "^2.2.0"
+    "egg-view-nunjucks": "^2.2.0",
+    "husky": "^0.14.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -35,7 +36,8 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "commitmsg": "commitlint -E GIT_PARAMS"
   },
   "ci": {
     "version": "8"
